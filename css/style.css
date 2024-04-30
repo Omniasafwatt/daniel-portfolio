@@ -1,0 +1,589 @@
+:root{
+    --main-color:#343434;
+    --p-color:#748182;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+}
+/* start home css */
+header{
+    background:linear-gradient(rgba(0,0,0,0.7) 0% 100%), url(../imgs/bg.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+.home-content .home-icons span{
+    font-size: 14;
+    background-color: rgba(0,0,0,0.4);
+    padding: 7px 11px;
+    border-radius: 50%;
+}
+.home-content h5{
+    font-size: 50px;
+    color: white;
+    font-weight: 800;
+    line-height: 55px;
+}
+.home-content h2{
+    font-size: 60px;
+    line-height: 72px;
+    color: white;
+    font-weight: 200;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+/* end home css */
+/* start nav css */
+.logo{
+    letter-spacing: 2px !important;
+    font-size: 18px;
+    line-height: 25.7px;
+    font-weight: 800;
+    color: var(--main-color) !important;
+}
+/* .container .nav-item */
+.navbar{
+    background-color: white;
+}
+.container .nav-item{
+    padding: 10px 20px;
+}
+.container .nav-item a{
+    color: var(--main-color);
+
+}
+.nav-item .nav-link{
+    position: relative;
+    overflow: hidden;
+}
+nav .navbar-nav li .active{
+    border-bottom: 2px solid var(--main-color) !important;
+} 
+/* end nav css */
+/* start about css */
+.about .container .row{
+    margin-bottom: 10vh;
+}
+.hero-img{
+    background-color: #6083b8;
+    width: 90%;
+    margin-left: 50px;
+    position: relative;
+}
+.hero-img img{
+    width: 100%;
+    height: 95%;
+}
+.hero-img::after{
+    content: "";
+    background-image: url(../imgs/dots.png);
+    width: 70%;
+    height: 70%;
+    z-index: -1;
+    left: -30px;
+    bottom: -30px;
+    background-repeat: repeat;
+    position: absolute;
+    
+}
+.container .aboutme h3{
+    color: var(--main-color);
+    font-size: 30px;
+    line-height: 33px;
+    font-weight: 800;
+}
+.container .aboutme span{
+    color: var(--p-color);
+}
+.container .aboutme p{
+    color: var(--p-color);
+    margin: 20px 0;
+    margin-right: 5px;
+}
+.container .aboutme p span{
+    font-weight: bold;
+}
+.progress{
+    height: 25px;
+    margin: 15px 0;
+    -webkit-box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
+}
+.progress .progress-bar .progress-content{
+    padding: 14px 10px 0 10px;
+}
+.progress .progress-bar{
+    border-radius: 5px;
+}
+.about-btn button{
+    font-size: 12px;
+    padding: 10px 35px;
+}
+.about-btn{
+    margin-top: 35px;
+}
+.btn1 button:hover{
+    background-color: transparent !important;
+    color: #212529 !important;
+}
+.btn2 button:hover{
+    background-color: #212529 !important;
+    color: white !important;
+}
+/* end about css */
+
+/* start services css */
+
+#services{
+    background-color:#F7F7F7;
+    padding-top: 100px ;
+}
+#services .container .row{
+    margin-bottom: 80px;
+}
+.service-head h3{
+    color: var(--main-color);
+    line-height: 44px;
+    font-weight: 900;
+    font-size: 40px;
+    z-index: 4;
+    position: relative;
+    margin-bottom: 80px;
+
+
+}
+.service-head h3::after{
+    content: "";
+    width: 15%;
+    left: 43%;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -10px;
+    height: 30px;
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -5px;
+    z-index: -1;
+
+}
+.service-head .item{
+    padding: 50px 20px;
+    background: #fff;
+    -webkit-box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    border-radius: 5px;
+    margin:  10px;
+}
+.service-head .item i{
+    font-size: 30px;
+    margin-bottom: 20px;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    background: #f4f4f4;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+.service-head .item:hover i{
+    background-color: #1C1C1C;
+    color: white;
+}
+.service-head .item h6{
+    color: var(--main-color);
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+.service-head .item p{
+    color: var(--p-color);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+/* end servives css */
+
+
+/* start portfolio css */
+
+
+
+.main-head h3 {
+    font-weight: 900;
+    font-size: 40px;
+    position: relative;
+    width: fit-content;
+    margin: auto;
+    z-index: 4;
+}
+.main-head h3::after {
+    content: "";
+    width: 100%;
+    height: 30px;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    z-index: -1;
+}
+
+#portfolio .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #222;
+    background-color: transparent;
+    border-bottom: #222 solid 2.5px;
+    border-radius:none;
+    line-height: 23px;
+    font-weight: 700;
+
+}
+#portfolio .nav-pills .nav-link {
+    color: #222;
+    line-height: 23px;
+    font-weight: 700;
+}
+
+#portfolio .nav-link:focus {
+    color: #222;
+    background-color: transparent;
+    border-bottom: #222 solid 2.5px;
+}
+#portfolio .nav-link:hover{
+    background-color: transparent;
+}
+
+#portfolio .gallery img{
+    width: 100%;
+    overflow: hidden;
+}
+
+#portfolio .gallery .portfolio-img-overlay .overlay-content h6{
+    font-size: 12px ;
+    line-height: 13.2px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin: 10px;
+    position: relative;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+}
+.gallery{
+    position: relative;
+    overflow: hidden;
+}
+.portfolio-img-overlay .overlay-content .icons{
+    transition: all 1s;
+    margin: 15px !important;
+}
+.portfolio-img-overlay .overlay-content .icons i{
+    width: 30px;
+    height: 30px;
+    line-height: 28px;
+    border-radius: 50%;
+    border: 1px solid #111;
+    background: #111;
+    color: #eee;
+}
+.portfolio-img-overlay .overlay-content .icons i:hover{
+    background-color: transparent;
+    color: black;
+}
+.portfolio-img-overlay{
+    position: absolute;
+    display: flex;
+    top: 7px;
+    left: 20px;
+    right: 20px;
+    bottom: 7px;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.95);
+    opacity: 0;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    z-index: 2;
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+}
+#portfolio .gallery:hover .portfolio-img-overlay{
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+
+#portfolio .gallery:hover h6,
+#portfolio .gallery:hover .icons
+{
+  margin-top: 5px !important;
+  margin-bottom: 0 !important;
+} 
+/* end profolio css */
+
+/* start slider css */
+
+#slider{
+    background-color: #F7F7F7;
+    padding: 100px 0;
+
+}
+#slider button [data-bs-target]{
+    background-color: var(--p-color) !important;
+}
+
+#slider button:hover{
+    background-color: var(--p-color) !important;
+}
+#slider button{
+    height: 10px !important;
+    width: 10px !important;
+    border-radius: 50% !important;
+    border: none;
+    background-color: gainsboro;
+    margin: 0 5px;
+    margin-top: 30px;
+
+}
+#slider .carousel-indicators .active{
+    background-color:  #748182;
+}
+#slider .carousel-indicators button:focus, #slider .carousel-indicators button:hover{
+    background-color: #748182;
+}
+
+#slider img{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin: 50px 0 20px 0;
+}
+#slider p{
+    font-size: 15px;
+    color: var(--p-color);
+    font-weight: 400;
+    word-spacing: 2px;
+    line-height: 24px;
+    width: 73% !important;
+    margin-bottom: 50px !important;
+
+}
+#slider h6{
+    color: var(--main-color);
+    line-height: 17.6px;
+    font-weight: 600;
+    margin-bottom: 5px !important;
+}
+#slider span{
+    color: var(--p-color);
+    font-size: 12px;
+    line-height: 17.1px;
+    font-weight: 600;
+    margin-bottom: 30px !important;
+}
+/* end slider css */
+
+/* start client css */
+#clients{
+    padding: 100px 0;
+}
+#clients i{
+    color: var(--main-color);
+    line-height: 30px;
+    font-size: 30px;
+}
+#clients h3{
+    color: var(--main-color);
+    line-height: 30px;
+    font-size: 30px;
+    font-weight: 800;
+}
+#clients p{
+    color: var(--p-color);
+    line-height: 24px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/* end client css */
+
+
+/* start tem css */
+
+#team{
+    background-color: #F7F7F7;
+    padding: 100px 0;
+}
+
+.team-item .team-layer ul{
+    display: flex;
+    justify-content: center; 
+    position: relative;
+    top: 40%;
+    left: -4%;
+}
+
+.team-item .team-layer ul li i{
+    font-size: 20px;
+    margin:3px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #1C1C1C;
+    color: white;
+    border-radius: 50%;
+}
+.team-item .team-layer ul li:hover i{
+    background: #f4f4f4;
+    color: black !important;
+    border: 1px solid black !important;
+}
+.team-item .team-img{
+    position: relative;
+    overflow: hidden;
+
+}
+.team-item .team-img img{
+    width: 100%;
+    transition: all 0.4s ease 0s;
+}
+.team-item .team-img:hover img{
+    transform: scale(1.2);
+}
+.team-item .team-img .team-layer{
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    background-color: rgba(255, 255, 255, 0.95);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+    transform: rotateY(180deg) scale(0.5, 0.5);
+}
+.team-item:hover .team-layer {
+    cursor: pointer;
+    opacity: 1;
+    transform: rotateY(0deg) scale(1, 1);
+  }
+
+.team-item .team-text{
+    text-align: center;
+    background-color: #5B5B5B;
+    padding: 20px 0;
+
+}
+.team-item .team-text h4{
+    color: white;
+    font-size: 25px;
+    line-height: 27.5px;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+.team-item .team-text h5{
+    color: white;
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 700;
+}
+
+/* end team css */
+
+
+/* start contact css */
+#contact{
+    padding: 100px 0;
+}
+
+#contact .item{
+    padding-top: 20px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    text-align: center;
+}
+#contact .item i{
+    font-size: 30px;
+    margin-bottom: 20px;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    background: #f4f4f4;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+#contact .item:hover i{
+    background-color: #1C1C1C;
+    color: white;
+}
+#contact .item h6{
+    color: var(--main-color);
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+#contact .item p{
+    color: var(--p-color);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+form input{
+    width: 100%;
+    border: none;
+    background-color: #F4F4F4;
+    border-radius: 5px;
+    padding: 8px;
+    outline: none !important;
+}
+form input:focus-visible{
+    border: none !important;
+}
+form textarea{
+    width: 100%;
+    border: none;
+    background-color: #F4F4F4;
+    border-radius: 5px;
+    padding: 8px;
+    outline: none !important;
+}
+.submit-btn{
+    width: 150px;
+    transition: all 0.5s;
+}
+.submit-btn:hover{
+    background-color: transparent !important;
+    border: 1px black solid !important;
+    color: black;
+}
+
+
+/* end contact css */
+
+
+
+
+
+
+/* footer */
+footer{
+    background-color: #1C1C1C;
+    height: 80px;
+}
+footer p {
+    font-size: 13px;
+    word-spacing: 2px;
+    line-height: 1.6;
+    font-size: 15px;
+    color: #748182;
+} 
